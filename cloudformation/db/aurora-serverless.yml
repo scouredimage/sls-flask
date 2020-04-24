@@ -70,7 +70,7 @@ Outputs:
     Description: Aurora Secret ARN
     Value: !Ref RDSInstanceSecret
 
-  GetDBSecretsCommand:
-    Description: Get DB secret command line
-    Condition: BastionEnabled
-    Value: "aws secretsmanager get-secret-value --secret-id ${self:custom.secrets.rds}"
+  #GetDBSecretsCommand:
+  #  Description: Get DB secret command line
+  #  Condition: BastionEnabled
+  #  Value: "aws secretsmanager get-secret-value --secret-id ${self:custom.secrets.rds}"
